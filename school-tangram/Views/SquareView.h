@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SqaureView.h
 //  school-tangram
 //
 //  Created by Benjamin SENECHAL on 22/03/2014.
@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SquareView.h"
 
-@interface ViewController : UIViewController
+@interface SquareView : UIView{
+    UIBezierPath *path;
+}
 
 @end

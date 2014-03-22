@@ -17,13 +17,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    SquareView *v = [[SquareView alloc] initWithFrame:CGRectMake(100, 100, 200, 200)];
+    v.transform = CGAffineTransformMakeRotation(M_PI_4);
+    
+    [self.view addSubview:v];
 }
 
 @end

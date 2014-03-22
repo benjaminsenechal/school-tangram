@@ -21,6 +21,7 @@
 		91DD491318DDFF5B0050CF55 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91DD48F518DDFF5B0050CF55 /* UIKit.framework */; };
 		91DD491B18DDFF5B0050CF55 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 91DD491918DDFF5B0050CF55 /* InfoPlist.strings */; };
 		91DD491D18DDFF5B0050CF55 /* school_tangramTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DD491C18DDFF5B0050CF55 /* school_tangramTests.m */; };
+		91DD492818DE00C60050CF55 /* SquareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DD492718DE00C60050CF55 /* SquareView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		91DD491818DDFF5B0050CF55 /* school-tangramTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "school-tangramTests-Info.plist"; sourceTree = "<group>"; };
 		91DD491A18DDFF5B0050CF55 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		91DD491C18DDFF5B0050CF55 /* school_tangramTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = school_tangramTests.m; sourceTree = "<group>"; };
+		91DD492618DE00C60050CF55 /* SquareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SquareView.h; path = Views/SquareView.h; sourceTree = "<group>"; };
+		91DD492718DE00C60050CF55 /* SquareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SquareView.m; path = Views/SquareView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,8 @@
 		91DD48F718DDFF5B0050CF55 /* school-tangram */ = {
 			isa = PBXGroup;
 			children = (
+				91DD492618DE00C60050CF55 /* SquareView.h */,
+				91DD492718DE00C60050CF55 /* SquareView.m */,
 				91DD490318DDFF5B0050CF55 /* Main.storyboard */,
 				91DD490618DDFF5B0050CF55 /* ViewController.h */,
 				91DD490718DDFF5B0050CF55 /* ViewController.m */,
@@ -252,6 +257,7 @@
 				91DD490818DDFF5B0050CF55 /* ViewController.m in Sources */,
 				91DD490218DDFF5B0050CF55 /* AppDelegate.m in Sources */,
 				91DD48FE18DDFF5B0050CF55 /* main.m in Sources */,
+				91DD492818DE00C60050CF55 /* SquareView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +294,8 @@
 				91DD490418DDFF5B0050CF55 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
+			path = "/Users/benjaminsenechal/Documents/EPSI 2013:2014/Developpement iPhone/Projets/school-tangram/school-tangram";
+			sourceTree = "<absolute>";
 		};
 		91DD491918DDFF5B0050CF55 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
