@@ -1,0 +1,473 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		91DD48F218DDFF5B0050CF55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91DD48F118DDFF5B0050CF55 /* Foundation.framework */; };
+		91DD48F418DDFF5B0050CF55 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91DD48F318DDFF5B0050CF55 /* CoreGraphics.framework */; };
+		91DD48F618DDFF5B0050CF55 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91DD48F518DDFF5B0050CF55 /* UIKit.framework */; };
+		91DD48FC18DDFF5B0050CF55 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 91DD48FA18DDFF5B0050CF55 /* InfoPlist.strings */; };
+		91DD48FE18DDFF5B0050CF55 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DD48FD18DDFF5B0050CF55 /* main.m */; };
+		91DD490218DDFF5B0050CF55 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DD490118DDFF5B0050CF55 /* AppDelegate.m */; };
+		91DD490518DDFF5B0050CF55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91DD490318DDFF5B0050CF55 /* Main.storyboard */; };
+		91DD490818DDFF5B0050CF55 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DD490718DDFF5B0050CF55 /* ViewController.m */; };
+		91DD490A18DDFF5B0050CF55 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91DD490918DDFF5B0050CF55 /* Images.xcassets */; };
+		91DD491118DDFF5B0050CF55 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91DD491018DDFF5B0050CF55 /* XCTest.framework */; };
+		91DD491218DDFF5B0050CF55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91DD48F118DDFF5B0050CF55 /* Foundation.framework */; };
+		91DD491318DDFF5B0050CF55 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91DD48F518DDFF5B0050CF55 /* UIKit.framework */; };
+		91DD491B18DDFF5B0050CF55 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 91DD491918DDFF5B0050CF55 /* InfoPlist.strings */; };
+		91DD491D18DDFF5B0050CF55 /* school_tangramTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DD491C18DDFF5B0050CF55 /* school_tangramTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		91DD491418DDFF5B0050CF55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91DD48E618DDFF5A0050CF55 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91DD48ED18DDFF5B0050CF55;
+			remoteInfo = "school-tangram";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		91DD48EE18DDFF5B0050CF55 /* school-tangram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "school-tangram.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		91DD48F118DDFF5B0050CF55 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		91DD48F318DDFF5B0050CF55 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		91DD48F518DDFF5B0050CF55 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		91DD48F918DDFF5B0050CF55 /* school-tangram-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "school-tangram-Info.plist"; sourceTree = "<group>"; };
+		91DD48FB18DDFF5B0050CF55 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		91DD48FD18DDFF5B0050CF55 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		91DD48FF18DDFF5B0050CF55 /* school-tangram-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "school-tangram-Prefix.pch"; sourceTree = "<group>"; };
+		91DD490018DDFF5B0050CF55 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		91DD490118DDFF5B0050CF55 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		91DD490418DDFF5B0050CF55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		91DD490618DDFF5B0050CF55 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		91DD490718DDFF5B0050CF55 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		91DD490918DDFF5B0050CF55 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		91DD490F18DDFF5B0050CF55 /* school-tangramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "school-tangramTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		91DD491018DDFF5B0050CF55 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		91DD491818DDFF5B0050CF55 /* school-tangramTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "school-tangramTests-Info.plist"; sourceTree = "<group>"; };
+		91DD491A18DDFF5B0050CF55 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		91DD491C18DDFF5B0050CF55 /* school_tangramTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = school_tangramTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		91DD48EB18DDFF5B0050CF55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91DD48F418DDFF5B0050CF55 /* CoreGraphics.framework in Frameworks */,
+				91DD48F618DDFF5B0050CF55 /* UIKit.framework in Frameworks */,
+				91DD48F218DDFF5B0050CF55 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91DD490C18DDFF5B0050CF55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91DD491118DDFF5B0050CF55 /* XCTest.framework in Frameworks */,
+				91DD491318DDFF5B0050CF55 /* UIKit.framework in Frameworks */,
+				91DD491218DDFF5B0050CF55 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		91DD48E518DDFF5A0050CF55 = {
+			isa = PBXGroup;
+			children = (
+				91DD48F718DDFF5B0050CF55 /* school-tangram */,
+				91DD491618DDFF5B0050CF55 /* school-tangramTests */,
+				91DD48F018DDFF5B0050CF55 /* Frameworks */,
+				91DD48EF18DDFF5B0050CF55 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		91DD48EF18DDFF5B0050CF55 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				91DD48EE18DDFF5B0050CF55 /* school-tangram.app */,
+				91DD490F18DDFF5B0050CF55 /* school-tangramTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		91DD48F018DDFF5B0050CF55 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91DD48F118DDFF5B0050CF55 /* Foundation.framework */,
+				91DD48F318DDFF5B0050CF55 /* CoreGraphics.framework */,
+				91DD48F518DDFF5B0050CF55 /* UIKit.framework */,
+				91DD491018DDFF5B0050CF55 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		91DD48F718DDFF5B0050CF55 /* school-tangram */ = {
+			isa = PBXGroup;
+			children = (
+				91DD490318DDFF5B0050CF55 /* Main.storyboard */,
+				91DD490618DDFF5B0050CF55 /* ViewController.h */,
+				91DD490718DDFF5B0050CF55 /* ViewController.m */,
+				91DD490918DDFF5B0050CF55 /* Images.xcassets */,
+				91DD48F818DDFF5B0050CF55 /* Supporting Files */,
+			);
+			path = "school-tangram";
+			sourceTree = "<group>";
+		};
+		91DD48F818DDFF5B0050CF55 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				91DD490018DDFF5B0050CF55 /* AppDelegate.h */,
+				91DD490118DDFF5B0050CF55 /* AppDelegate.m */,
+				91DD48F918DDFF5B0050CF55 /* school-tangram-Info.plist */,
+				91DD48FA18DDFF5B0050CF55 /* InfoPlist.strings */,
+				91DD48FD18DDFF5B0050CF55 /* main.m */,
+				91DD48FF18DDFF5B0050CF55 /* school-tangram-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		91DD491618DDFF5B0050CF55 /* school-tangramTests */ = {
+			isa = PBXGroup;
+			children = (
+				91DD491C18DDFF5B0050CF55 /* school_tangramTests.m */,
+				91DD491718DDFF5B0050CF55 /* Supporting Files */,
+			);
+			path = "school-tangramTests";
+			sourceTree = "<group>";
+		};
+		91DD491718DDFF5B0050CF55 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				91DD491818DDFF5B0050CF55 /* school-tangramTests-Info.plist */,
+				91DD491918DDFF5B0050CF55 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		91DD48ED18DDFF5B0050CF55 /* school-tangram */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91DD492018DDFF5B0050CF55 /* Build configuration list for PBXNativeTarget "school-tangram" */;
+			buildPhases = (
+				91DD48EA18DDFF5B0050CF55 /* Sources */,
+				91DD48EB18DDFF5B0050CF55 /* Frameworks */,
+				91DD48EC18DDFF5B0050CF55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "school-tangram";
+			productName = "school-tangram";
+			productReference = 91DD48EE18DDFF5B0050CF55 /* school-tangram.app */;
+			productType = "com.apple.product-type.application";
+		};
+		91DD490E18DDFF5B0050CF55 /* school-tangramTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91DD492318DDFF5B0050CF55 /* Build configuration list for PBXNativeTarget "school-tangramTests" */;
+			buildPhases = (
+				91DD490B18DDFF5B0050CF55 /* Sources */,
+				91DD490C18DDFF5B0050CF55 /* Frameworks */,
+				91DD490D18DDFF5B0050CF55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				91DD491518DDFF5B0050CF55 /* PBXTargetDependency */,
+			);
+			name = "school-tangramTests";
+			productName = "school-tangramTests";
+			productReference = 91DD490F18DDFF5B0050CF55 /* school-tangramTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		91DD48E618DDFF5A0050CF55 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Benjamin SENECHAL";
+				TargetAttributes = {
+					91DD490E18DDFF5B0050CF55 = {
+						TestTargetID = 91DD48ED18DDFF5B0050CF55;
+					};
+				};
+			};
+			buildConfigurationList = 91DD48E918DDFF5A0050CF55 /* Build configuration list for PBXProject "school-tangram" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 91DD48E518DDFF5A0050CF55;
+			productRefGroup = 91DD48EF18DDFF5B0050CF55 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				91DD48ED18DDFF5B0050CF55 /* school-tangram */,
+				91DD490E18DDFF5B0050CF55 /* school-tangramTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		91DD48EC18DDFF5B0050CF55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91DD490A18DDFF5B0050CF55 /* Images.xcassets in Resources */,
+				91DD48FC18DDFF5B0050CF55 /* InfoPlist.strings in Resources */,
+				91DD490518DDFF5B0050CF55 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91DD490D18DDFF5B0050CF55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91DD491B18DDFF5B0050CF55 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		91DD48EA18DDFF5B0050CF55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91DD490818DDFF5B0050CF55 /* ViewController.m in Sources */,
+				91DD490218DDFF5B0050CF55 /* AppDelegate.m in Sources */,
+				91DD48FE18DDFF5B0050CF55 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91DD490B18DDFF5B0050CF55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91DD491D18DDFF5B0050CF55 /* school_tangramTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		91DD491518DDFF5B0050CF55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 91DD48ED18DDFF5B0050CF55 /* school-tangram */;
+			targetProxy = 91DD491418DDFF5B0050CF55 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		91DD48FA18DDFF5B0050CF55 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				91DD48FB18DDFF5B0050CF55 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		91DD490318DDFF5B0050CF55 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				91DD490418DDFF5B0050CF55 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		91DD491918DDFF5B0050CF55 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				91DD491A18DDFF5B0050CF55 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		91DD491E18DDFF5B0050CF55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		91DD491F18DDFF5B0050CF55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		91DD492118DDFF5B0050CF55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "school-tangram/school-tangram-Prefix.pch";
+				INFOPLIST_FILE = "school-tangram/school-tangram-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		91DD492218DDFF5B0050CF55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "school-tangram/school-tangram-Prefix.pch";
+				INFOPLIST_FILE = "school-tangram/school-tangram-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		91DD492418DDFF5B0050CF55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/school-tangram.app/school-tangram";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "school-tangram/school-tangram-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "school-tangramTests/school-tangramTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		91DD492518DDFF5B0050CF55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/school-tangram.app/school-tangram";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "school-tangram/school-tangram-Prefix.pch";
+				INFOPLIST_FILE = "school-tangramTests/school-tangramTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		91DD48E918DDFF5A0050CF55 /* Build configuration list for PBXProject "school-tangram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91DD491E18DDFF5B0050CF55 /* Debug */,
+				91DD491F18DDFF5B0050CF55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91DD492018DDFF5B0050CF55 /* Build configuration list for PBXNativeTarget "school-tangram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91DD492118DDFF5B0050CF55 /* Debug */,
+				91DD492218DDFF5B0050CF55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		91DD492318DDFF5B0050CF55 /* Build configuration list for PBXNativeTarget "school-tangramTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91DD492418DDFF5B0050CF55 /* Debug */,
+				91DD492518DDFF5B0050CF55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 91DD48E618DDFF5A0050CF55 /* Project object */;
+}
