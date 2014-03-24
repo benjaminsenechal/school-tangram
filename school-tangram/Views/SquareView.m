@@ -14,7 +14,7 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        self.backgroundColor = [UIColor clearColor];
+        self.backgroundColor = [UIColor colorWithRed:158.0/255.0 green:52.0/255.0 blue:139.0/255.0 alpha:1];
         path = [[UIBezierPath alloc] init];
         [path moveToPoint:CGPointMake(self.frame.origin.x,self.frame.origin.y)];
         [path addLineToPoint:CGPointMake(self.frame.origin.x+self.frame.size.width, self.frame.origin.y)];
@@ -27,11 +27,7 @@
 
 - (void)drawRect:(CGRect)rect
 {
-    [[UIColor colorWithRed:158.0/255.0 green:52.0/255.0 blue:139.0/255.0 alpha:1] setFill];
-    [[UIColor colorWithRed:158.0/255.0 green:52.0/255.0 blue:139.0/255.0 alpha:1] setStroke];
     [path closePath];
-    [path fill];
-    [path stroke];
 }
 
 @end

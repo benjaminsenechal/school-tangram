@@ -9,10 +9,13 @@
 #import <UIKit/UIKit.h>
 #import "SquareView.h"
 #import "ParallelogramView.h"
+#import "TriangleView.h"
 @interface ViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet SquareView *Square;
 @property (strong, nonatomic) IBOutlet ParallelogramView *Parallelogram;
+@property (strong, nonatomic) IBOutlet TriangleView *GreenTriangle;
+@property (strong, nonatomic) IBOutlet TriangleView *BlueTriangle;
 
 - (IBAction)handle:(UIPanGestureRecognizer *)recognizer;
 

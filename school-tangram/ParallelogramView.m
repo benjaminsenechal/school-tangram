@@ -16,10 +16,10 @@
     if (self) {
         self.backgroundColor = [UIColor clearColor];
         path = [[UIBezierPath alloc] init];
-        [path moveToPoint:CGPointMake(200,200)];
-        [path addLineToPoint:CGPointMake(400,200)];
-        [path addLineToPoint:CGPointMake(300,300)];
-        [path addLineToPoint:CGPointMake(100,300)];
+        [path moveToPoint:CGPointMake(75,0)];
+        [path addLineToPoint:CGPointMake(217.5, 0)];
+        [path addLineToPoint:CGPointMake(142.5,75)];
+        [path addLineToPoint:CGPointMake(0,75)];
     }
     return self;
 }
@@ -31,6 +31,7 @@
     [path closePath];
     [path fill];
     [path stroke];
+    [path closePath];
 }
 
 

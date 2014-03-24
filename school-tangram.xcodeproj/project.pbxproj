@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9189D71818E0CF8000B4AC41 /* TriangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9189D71718E0CF8000B4AC41 /* TriangleView.m */; };
 		91DB1BCD18E0439800BD73FB /* ParallelogramView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DB1BCC18E0439800BD73FB /* ParallelogramView.m */; };
 		91DD48F218DDFF5B0050CF55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91DD48F118DDFF5B0050CF55 /* Foundation.framework */; };
 		91DD48F418DDFF5B0050CF55 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91DD48F318DDFF5B0050CF55 /* CoreGraphics.framework */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9189D71618E0CF8000B4AC41 /* TriangleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriangleView.h; sourceTree = "<group>"; };
+		9189D71718E0CF8000B4AC41 /* TriangleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriangleView.m; sourceTree = "<group>"; };
 		91DB1BCB18E0439800BD73FB /* ParallelogramView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParallelogramView.h; sourceTree = "<group>"; };
 		91DB1BCC18E0439800BD73FB /* ParallelogramView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParallelogramView.m; sourceTree = "<group>"; };
 		91DD48EE18DDFF5B0050CF55 /* school-tangram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "school-tangram.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,6 +121,8 @@
 		91DD48F718DDFF5B0050CF55 /* school-tangram */ = {
 			isa = PBXGroup;
 			children = (
+				9189D71618E0CF8000B4AC41 /* TriangleView.h */,
+				9189D71718E0CF8000B4AC41 /* TriangleView.m */,
 				91DD492618DE00C60050CF55 /* SquareView.h */,
 				91DD492718DE00C60050CF55 /* SquareView.m */,
 				91DB1BCB18E0439800BD73FB /* ParallelogramView.h */,
@@ -261,6 +266,7 @@
 			files = (
 				91DD490818DDFF5B0050CF55 /* ViewController.m in Sources */,
 				91DD490218DDFF5B0050CF55 /* AppDelegate.m in Sources */,
+				9189D71818E0CF8000B4AC41 /* TriangleView.m in Sources */,
 				91DD48FE18DDFF5B0050CF55 /* main.m in Sources */,
 				91DB1BCD18E0439800BD73FB /* ParallelogramView.m in Sources */,
 				91DD492818DE00C60050CF55 /* SquareView.m in Sources */,

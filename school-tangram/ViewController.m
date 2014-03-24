@@ -14,6 +14,8 @@
 @implementation ViewController
 @synthesize Square;
 @synthesize Parallelogram;
+@synthesize GreenTriangle;
+@synthesize BlueTriangle;
 
 #pragma mark View Lifecycle
 
@@ -21,14 +23,26 @@
 {
     [super viewDidLoad];
  
-    Parallelogram = [[ParallelogramView alloc]initWithFrame:CGRectMake(0, 0, 500, 500)];
+    Parallelogram = [[ParallelogramView alloc]initWithFrame:CGRectMake(100, 100, 220, 80)];
     
-    Square = [[SquareView alloc] initWithFrame:CGRectMake(100, 100, 200, 200)];
+    GreenTriangle = [[TriangleView alloc]initWithFrame:CGRectMake(300, 300, 290, 245)];
+    GreenTriangle.transform = CGAffineTransformMakeRotation(-M_PI_2);
+    [GreenTriangle setColor:[UIColor colorWithRed:83.0/255.0 green:175.0/255.0 blue:49.0/255.0 alpha:1]];
+    
+    BlueTriangle = [[TriangleView alloc]initWithFrame:CGRectMake(200, 200, 290, 245)];
+    [BlueTriangle setColor:[UIColor colorWithRed:41.0/255.0 green:179.0/255.0 blue:213.0/255.0 alpha:1]];
+    
+    Square = [[SquareView alloc] initWithFrame:CGRectMake(400, 400, 100, 100)];
     Square.transform = CGAffineTransformMakeRotation(M_PI_4);
+    
     
     [self addGestureToUI:Square];
     [self addGestureToUI:Parallelogram];
+    [self addGestureToUI:GreenTriangle];
+    [self addGestureToUI:BlueTriangle];
 
+    [self.view addSubview:GreenTriangle];
+    [self.view addSubview:BlueTriangle];
     [self.view addSubview:Parallelogram];
     [self.view addSubview:Square];
 }
