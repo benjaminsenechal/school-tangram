@@ -11,4 +11,7 @@
 
 @interface ViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet SquareView *Square;
+- (IBAction)handle:(UIPanGestureRecognizer *)recognizer;
+
 @end

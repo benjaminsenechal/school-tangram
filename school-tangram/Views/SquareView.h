@@ -12,4 +12,6 @@
     UIBezierPath *path;
 }
 
+@property(nonatomic, strong) NSString *point;
+
 @end
