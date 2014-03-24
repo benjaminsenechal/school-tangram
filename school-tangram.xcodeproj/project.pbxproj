@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		91DB1BCD18E0439800BD73FB /* ParallelogramView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DB1BCC18E0439800BD73FB /* ParallelogramView.m */; };
 		91DD48F218DDFF5B0050CF55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91DD48F118DDFF5B0050CF55 /* Foundation.framework */; };
 		91DD48F418DDFF5B0050CF55 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91DD48F318DDFF5B0050CF55 /* CoreGraphics.framework */; };
 		91DD48F618DDFF5B0050CF55 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91DD48F518DDFF5B0050CF55 /* UIKit.framework */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		91DB1BCB18E0439800BD73FB /* ParallelogramView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParallelogramView.h; sourceTree = "<group>"; };
+		91DB1BCC18E0439800BD73FB /* ParallelogramView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParallelogramView.m; sourceTree = "<group>"; };
 		91DD48EE18DDFF5B0050CF55 /* school-tangram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "school-tangram.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		91DD48F118DDFF5B0050CF55 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		91DD48F318DDFF5B0050CF55 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -117,6 +120,8 @@
 			children = (
 				91DD492618DE00C60050CF55 /* SquareView.h */,
 				91DD492718DE00C60050CF55 /* SquareView.m */,
+				91DB1BCB18E0439800BD73FB /* ParallelogramView.h */,
+				91DB1BCC18E0439800BD73FB /* ParallelogramView.m */,
 				91DD490318DDFF5B0050CF55 /* Main.storyboard */,
 				91DD490618DDFF5B0050CF55 /* ViewController.h */,
 				91DD490718DDFF5B0050CF55 /* ViewController.m */,
@@ -257,6 +262,7 @@
 				91DD490818DDFF5B0050CF55 /* ViewController.m in Sources */,
 				91DD490218DDFF5B0050CF55 /* AppDelegate.m in Sources */,
 				91DD48FE18DDFF5B0050CF55 /* main.m in Sources */,
+				91DB1BCD18E0439800BD73FB /* ParallelogramView.m in Sources */,
 				91DD492818DE00C60050CF55 /* SquareView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -465,6 +471,7 @@
 				91DD492218DDFF5B0050CF55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		91DD492318DDFF5B0050CF55 /* Build configuration list for PBXNativeTarget "school-tangramTests" */ = {
 			isa = XCConfigurationList;
@@ -473,6 +480,7 @@
 				91DD492518DDFF5B0050CF55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

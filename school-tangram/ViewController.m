@@ -13,6 +13,7 @@
 
 @implementation ViewController
 @synthesize Square;
+@synthesize Parallelogram;
 
 #pragma mark View Lifecycle
 
@@ -20,16 +21,26 @@
 {
     [super viewDidLoad];
  
+    Parallelogram = [[ParallelogramView alloc]initWithFrame:CGRectMake(0, 0, 500, 500)];
+    
     Square = [[SquareView alloc] initWithFrame:CGRectMake(100, 100, 200, 200)];
     Square.transform = CGAffineTransformMakeRotation(M_PI_4);
     
-    Square.userInteractionEnabled = YES;
-    UIPanGestureRecognizer *recognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handle:)];
-    [Square addGestureRecognizer:recognizer];
+    [self addGestureToUI:Square];
+    [self addGestureToUI:Parallelogram];
+
+    [self.view addSubview:Parallelogram];
     [self.view addSubview:Square];
 }
 
 #pragma mark Gestures
+
+- (void)addGestureToUI:(UIView*)view
+{
+    view.userInteractionEnabled = YES;
+    UIPanGestureRecognizer *recognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handle:)];
+    [view addGestureRecognizer:recognizer];
+}
 
 - (IBAction)handle:(UIPanGestureRecognizer *)recognizer {
     

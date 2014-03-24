@@ -8,10 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "SquareView.h"
-
+#import "ParallelogramView.h"
 @interface ViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet SquareView *Square;
+@property (strong, nonatomic) IBOutlet ParallelogramView *Parallelogram;
+
 - (IBAction)handle:(UIPanGestureRecognizer *)recognizer;
 
 @end
