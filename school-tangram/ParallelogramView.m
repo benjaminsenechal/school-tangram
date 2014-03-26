@@ -10,6 +10,11 @@
 
 @implementation ParallelogramView
 
+- (void)setColor:(UIColor *)color
+{
+    _color = color;
+}
+
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
@@ -26,13 +31,12 @@
 
 - (void)drawRect:(CGRect)rect
 {
-    [[UIColor colorWithRed:255.0/255.0 green:229.0/255.0 blue:0.0/255.0 alpha:1] setFill];
-    [[UIColor colorWithRed:255.0/255.0 green:229.0/255.0 blue:0.0/255.0 alpha:1] setStroke];
+    [_color setFill];
+    [_color setStroke];
     [path closePath];
     [path fill];
     [path stroke];
     [path closePath];
 }
-
 
 @end

@@ -24,6 +24,7 @@
     [super viewDidLoad];
  
     Parallelogram = [[ParallelogramView alloc]initWithFrame:CGRectMake(100, 100, 220, 80)];
+    [Parallelogram setColor:[UIColor colorWithRed:255.0/255.0 green:229.0/255.0 blue:0.0/255.0 alpha:1]];
     
     GreenTriangle = [[TriangleView alloc]initWithFrame:CGRectMake(300, 300, 290, 245)];
     GreenTriangle.transform = CGAffineTransformMakeRotation(-M_PI_2);
