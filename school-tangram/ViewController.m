@@ -53,16 +53,31 @@
 - (void)addGestureToUI:(UIView*)view
 {
     view.userInteractionEnabled = YES;
-    UIPanGestureRecognizer *recognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handle:)];
-    [view addGestureRecognizer:recognizer];
+    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(PanGesture:)];
+    UIRotationGestureRecognizer *rotate = [[UIRotationGestureRecognizer alloc] initWithTarget:self action:@selector(RotateGesture:)];
+
+    [view addGestureRecognizer:pan];
+    [view addGestureRecognizer:rotate];
 }
 
-- (IBAction)handle:(UIPanGestureRecognizer *)recognizer {
+- (IBAction)PanGesture:(UIPanGestureRecognizer *)recognizer {
     
     CGPoint translation = [recognizer translationInView:self.view];
     recognizer.view.center = CGPointMake(recognizer.view.center.x + translation.x,
                                          recognizer.view.center.y + translation.y);
     [recognizer setTranslation:CGPointMake(0, 0) inView:self.view];
+}
+
+- (IBAction)RotateGesture:(UIRotationGestureRecognizer *)recognizer
+{
+    recognizer.view.transform = CGAffineTransformRotate(recognizer.view.transform, recognizer.rotation);
+    recognizer.rotation = 0;
+}
+
+- (IBAction)PinchGesture:(UIPinchGestureRecognizer *)recognizer
+{
+    recognizer.view.transform = CGAffineTransformScale(recognizer.view.transform, recognizer.scale, recognizer.scale);
+    recognizer.scale = 1;
 }
 
 @end

@@ -17,6 +17,8 @@
 @property (strong, nonatomic) IBOutlet TriangleView *GreenTriangle;
 @property (strong, nonatomic) IBOutlet TriangleView *BlueTriangle;
 
-- (IBAction)handle:(UIPanGestureRecognizer *)recognizer;
+- (IBAction)PanGesture:(UIPanGestureRecognizer *)recognizer;
+- (IBAction)PinchGesture:(UIPinchGestureRecognizer *)recognizer;
+- (IBAction)RotateGesture:(UIRotationGestureRecognizer *)recognizer;
 
 @end
