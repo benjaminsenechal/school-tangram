@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		915F7F5C18E4275200C6E609 /* SquareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 915F7F5B18E4275200C6E609 /* SquareView.m */; };
 		9189D71818E0CF8000B4AC41 /* TriangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9189D71718E0CF8000B4AC41 /* TriangleView.m */; };
 		91DB1BCD18E0439800BD73FB /* ParallelogramView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DB1BCC18E0439800BD73FB /* ParallelogramView.m */; };
 		91DD48F218DDFF5B0050CF55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91DD48F118DDFF5B0050CF55 /* Foundation.framework */; };
@@ -23,7 +24,6 @@
 		91DD491318DDFF5B0050CF55 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91DD48F518DDFF5B0050CF55 /* UIKit.framework */; };
 		91DD491B18DDFF5B0050CF55 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 91DD491918DDFF5B0050CF55 /* InfoPlist.strings */; };
 		91DD491D18DDFF5B0050CF55 /* school_tangramTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DD491C18DDFF5B0050CF55 /* school_tangramTests.m */; };
-		91DD492818DE00C60050CF55 /* SquareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DD492718DE00C60050CF55 /* SquareView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		915F7F5A18E4275200C6E609 /* SquareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SquareView.h; sourceTree = "<group>"; };
+		915F7F5B18E4275200C6E609 /* SquareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SquareView.m; sourceTree = "<group>"; };
 		9189D71618E0CF8000B4AC41 /* TriangleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriangleView.h; sourceTree = "<group>"; };
 		9189D71718E0CF8000B4AC41 /* TriangleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriangleView.m; sourceTree = "<group>"; };
 		91DB1BCB18E0439800BD73FB /* ParallelogramView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParallelogramView.h; sourceTree = "<group>"; };
@@ -60,8 +62,6 @@
 		91DD491818DDFF5B0050CF55 /* school-tangramTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "school-tangramTests-Info.plist"; sourceTree = "<group>"; };
 		91DD491A18DDFF5B0050CF55 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		91DD491C18DDFF5B0050CF55 /* school_tangramTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = school_tangramTests.m; sourceTree = "<group>"; };
-		91DD492618DE00C60050CF55 /* SquareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SquareView.h; path = Views/SquareView.h; sourceTree = "<group>"; };
-		91DD492718DE00C60050CF55 /* SquareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SquareView.m; path = Views/SquareView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +88,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		915F7F5D18E4284D00C6E609 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				91DD490318DDFF5B0050CF55 /* Main.storyboard */,
+				915F7F5A18E4275200C6E609 /* SquareView.h */,
+				915F7F5B18E4275200C6E609 /* SquareView.m */,
+				9189D71618E0CF8000B4AC41 /* TriangleView.h */,
+				9189D71718E0CF8000B4AC41 /* TriangleView.m */,
+				91DB1BCB18E0439800BD73FB /* ParallelogramView.h */,
+				91DB1BCC18E0439800BD73FB /* ParallelogramView.m */,
+			);
+			name = Views;
+			path = "/Users/benjaminsenechal/Documents/EPSI 2013:2014/Developpement iPhone/Projets/school-tangram/school-tangram/Views";
+			sourceTree = "<absolute>";
+		};
+		915F7F5E18E4287600C6E609 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				91DD490618DDFF5B0050CF55 /* ViewController.h */,
+				91DD490718DDFF5B0050CF55 /* ViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		91DD48E518DDFF5A0050CF55 = {
 			isa = PBXGroup;
 			children = (
@@ -121,15 +145,8 @@
 		91DD48F718DDFF5B0050CF55 /* school-tangram */ = {
 			isa = PBXGroup;
 			children = (
-				9189D71618E0CF8000B4AC41 /* TriangleView.h */,
-				9189D71718E0CF8000B4AC41 /* TriangleView.m */,
-				91DD492618DE00C60050CF55 /* SquareView.h */,
-				91DD492718DE00C60050CF55 /* SquareView.m */,
-				91DB1BCB18E0439800BD73FB /* ParallelogramView.h */,
-				91DB1BCC18E0439800BD73FB /* ParallelogramView.m */,
-				91DD490318DDFF5B0050CF55 /* Main.storyboard */,
-				91DD490618DDFF5B0050CF55 /* ViewController.h */,
-				91DD490718DDFF5B0050CF55 /* ViewController.m */,
+				915F7F5E18E4287600C6E609 /* Controllers */,
+				915F7F5D18E4284D00C6E609 /* Views */,
 				91DD490918DDFF5B0050CF55 /* Images.xcassets */,
 				91DD48F818DDFF5B0050CF55 /* Supporting Files */,
 			);
@@ -264,12 +281,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				915F7F5C18E4275200C6E609 /* SquareView.m in Sources */,
 				91DD490818DDFF5B0050CF55 /* ViewController.m in Sources */,
 				91DD490218DDFF5B0050CF55 /* AppDelegate.m in Sources */,
 				9189D71818E0CF8000B4AC41 /* TriangleView.m in Sources */,
 				91DD48FE18DDFF5B0050CF55 /* main.m in Sources */,
 				91DB1BCD18E0439800BD73FB /* ParallelogramView.m in Sources */,
-				91DD492818DE00C60050CF55 /* SquareView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
