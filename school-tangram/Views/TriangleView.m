@@ -15,21 +15,36 @@
     _color = color;
 }
 
+- (void)setFirstPoint:(CGPoint)firstPoint
+{
+    _firstPoint = firstPoint;
+}
+
+- (void)setSecondPoint:(CGPoint)secondPoint
+{
+    _secondPoint = secondPoint;
+}
+
+- (void)setThirdPoint:(CGPoint)thirdPoint
+{
+    _thirdPoint = thirdPoint;
+}
+
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
         self.backgroundColor = [UIColor clearColor];
         path = [[UIBezierPath alloc] init];
-        [path moveToPoint:CGPointMake(141.2, 0)];
-        [path addLineToPoint:CGPointMake(282.8, 141.42)];
-        [path addLineToPoint:CGPointMake(0, 141.42)];
     }
     return self;
 }
 
 - (void)drawRect:(CGRect)rect
 {
+    [path moveToPoint:_firstPoint];
+    [path addLineToPoint:_secondPoint];
+    [path addLineToPoint:_thirdPoint];
     [_color setFill];
     [_color setStroke];
     [path fill];

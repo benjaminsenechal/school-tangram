@@ -26,13 +26,19 @@
     Parallelogram = [[ParallelogramView alloc]initWithFrame:CGRectMake(100, 100, 220, 80)];
     [Parallelogram setColor:[UIColor colorWithRed:255.0/255.0 green:229.0/255.0 blue:0.0/255.0 alpha:1]];
     
+    CGPoint BigFirstPoint = CGPointMake(141.42, 0);
+    CGPoint BigSecondPoint = CGPointMake(282.8, 141.42);
+    CGPoint BigThirdPoint = CGPointMake(0, 141.42);
+
     GreenTriangle = [[TriangleView alloc]initWithFrame:CGRectMake(300, 300, 290, 245)];
     GreenTriangle.transform = CGAffineTransformMakeRotation(-M_PI_2);
     [GreenTriangle setColor:[UIColor colorWithRed:83.0/255.0 green:175.0/255.0 blue:49.0/255.0 alpha:1]];
+    [self setPointsToTriangleWithTheFirst:BigFirstPoint theSecond:BigSecondPoint andTheThird:BigThirdPoint On:GreenTriangle];
     
     BlueTriangle = [[TriangleView alloc]initWithFrame:CGRectMake(200, 200, 290, 245)];
     [BlueTriangle setColor:[UIColor colorWithRed:41.0/255.0 green:179.0/255.0 blue:213.0/255.0 alpha:1]];
-    
+    [self setPointsToTriangleWithTheFirst:BigFirstPoint theSecond:BigSecondPoint andTheThird:BigThirdPoint On:BlueTriangle];
+        
     Square = [[SquareView alloc] initWithFrame:CGRectMake(400, 400, 100, 100)];
     Square.transform = CGAffineTransformMakeRotation(M_PI_4);
     
@@ -49,6 +55,13 @@
 }
 
 #pragma mark Gestures
+
+- (void)setPointsToTriangleWithTheFirst:(CGPoint)firstPoint theSecond:(CGPoint)secondPoint andTheThird:(CGPoint)thirdPoint On:(TriangleView*)v
+{
+    [v setFirstPoint:firstPoint];
+    [v setSecondPoint:secondPoint];
+    [v setThirdPoint:thirdPoint];
+}
 
 - (void)addGestureToUI:(UIView*)view
 {

@@ -13,5 +13,8 @@
 }
 
 @property(nonatomic) UIColor *color;
+@property(nonatomic) CGPoint firstPoint;
+@property(nonatomic) CGPoint secondPoint;
+@property(nonatomic) CGPoint thirdPoint;
 
 @end

@@ -20,5 +20,6 @@
 - (IBAction)PanGesture:(UIPanGestureRecognizer *)recognizer;
 - (IBAction)PinchGesture:(UIPinchGestureRecognizer *)recognizer;
 - (IBAction)RotateGesture:(UIRotationGestureRecognizer *)recognizer;
+- (void)setPointsToTriangleWithTheFirst:(CGPoint)firstPoint theSecond:(CGPoint)secondPoint andTheThird:(CGPoint)thirdPoint On:(TriangleView*)v;
 
 @end
