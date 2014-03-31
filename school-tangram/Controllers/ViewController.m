@@ -16,6 +16,8 @@
 @synthesize Parallelogram;
 @synthesize GreenTriangle;
 @synthesize BlueTriangle;
+@synthesize PurpleTriangle;
+@synthesize OrangeTriangle;
 
 #pragma mark View Lifecycle
 
@@ -30,15 +32,25 @@
     CGPoint BigSecondPoint = CGPointMake(282.8, 141.42);
     CGPoint BigThirdPoint = CGPointMake(0, 141.42);
 
-    GreenTriangle = [[TriangleView alloc]initWithFrame:CGRectMake(300, 300, 290, 245)];
+    GreenTriangle = [[TriangleView alloc]initWithFrame:CGRectMake(300, 300, 290, 141.42)];
     GreenTriangle.transform = CGAffineTransformMakeRotation(-M_PI_2);
-    [GreenTriangle setColor:[UIColor colorWithRed:83.0/255.0 green:175.0/255.0 blue:49.0/255.0 alpha:1]];
-    [self setPointsToTriangleWithTheFirst:BigFirstPoint theSecond:BigSecondPoint andTheThird:BigThirdPoint On:GreenTriangle];
+    [self setPointsToTriangleWithTheFirst:BigFirstPoint theSecond:BigSecondPoint andTheThird:BigThirdPoint On:GreenTriangle WithColor:[UIColor colorWithRed:83.0/255.0 green:175.0/255.0 blue:49.0/255.0 alpha:1]];
     
-    BlueTriangle = [[TriangleView alloc]initWithFrame:CGRectMake(200, 200, 290, 245)];
-    [BlueTriangle setColor:[UIColor colorWithRed:41.0/255.0 green:179.0/255.0 blue:213.0/255.0 alpha:1]];
-    [self setPointsToTriangleWithTheFirst:BigFirstPoint theSecond:BigSecondPoint andTheThird:BigThirdPoint On:BlueTriangle];
-        
+    BlueTriangle = [[TriangleView alloc]initWithFrame:CGRectMake(200, 200, 290, 141.42)];
+    [self setPointsToTriangleWithTheFirst:BigFirstPoint theSecond:BigSecondPoint andTheThird:BigThirdPoint On:BlueTriangle WithColor:[UIColor colorWithRed:41.0/255.0 green:179.0/255.0 blue:213.0/255.0 alpha:1]];
+    
+    CGPoint SmallFirstPoint = CGPointMake(70.71, 0);
+    CGPoint SmallSecondPoint = CGPointMake(141.42, 70.71);
+    CGPoint SmallThirdPoint = CGPointMake(0, 70.71);
+    
+    PurpleTriangle = [[TriangleView alloc]initWithFrame:CGRectMake(100, 100, 141.42, 70.71)];
+    [self setPointsToTriangleWithTheFirst:SmallFirstPoint theSecond:SmallSecondPoint andTheThird:SmallThirdPoint On:PurpleTriangle WithColor:[UIColor colorWithRed:100.0/255.0 green:34.0/255.0 blue:97.0/255.0 alpha:1]];
+    PurpleTriangle.transform = CGAffineTransformMakeRotation(M_PI_2);
+    
+    OrangeTriangle = [[TriangleView alloc]initWithFrame:CGRectMake(150, 150, 141.42, 70.71)];
+    [self setPointsToTriangleWithTheFirst:SmallFirstPoint theSecond:SmallSecondPoint andTheThird:SmallThirdPoint On:OrangeTriangle WithColor:[UIColor colorWithRed:240.0/255.0 green:127.0/255.0 blue:49.0/255.0 alpha:1]];
+    OrangeTriangle.transform = CGAffineTransformMakeRotation(M_PI);
+    
     Square = [[SquareView alloc] initWithFrame:CGRectMake(400, 400, 100, 100)];
     Square.transform = CGAffineTransformMakeRotation(M_PI_4);
     
@@ -47,7 +59,11 @@
     [self addGestureToUI:Parallelogram];
     [self addGestureToUI:GreenTriangle];
     [self addGestureToUI:BlueTriangle];
-
+    [self addGestureToUI:PurpleTriangle];
+    [self addGestureToUI:OrangeTriangle];
+    
+    [self.view addSubview:OrangeTriangle];
+    [self.view addSubview:PurpleTriangle];
     [self.view addSubview:GreenTriangle];
     [self.view addSubview:BlueTriangle];
     [self.view addSubview:Parallelogram];
@@ -56,14 +72,15 @@
 
 #pragma mark Gestures
 
-- (void)setPointsToTriangleWithTheFirst:(CGPoint)firstPoint theSecond:(CGPoint)secondPoint andTheThird:(CGPoint)thirdPoint On:(TriangleView*)v
+- (void)setPointsToTriangleWithTheFirst:(CGPoint)firstPoint theSecond:(CGPoint)secondPoint andTheThird:(CGPoint)thirdPoint On:(TriangleView *)view WithColor:(UIColor *)color
 {
-    [v setFirstPoint:firstPoint];
-    [v setSecondPoint:secondPoint];
-    [v setThirdPoint:thirdPoint];
+    [view setFirstPoint:firstPoint];
+    [view setSecondPoint:secondPoint];
+    [view setThirdPoint:thirdPoint];
+    [view setColor:color];
 }
 
-- (void)addGestureToUI:(UIView*)view
+- (void)addGestureToUI:(UIView *)view
 {
     view.userInteractionEnabled = YES;
     UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(PanGesture:)];

@@ -16,10 +16,12 @@
 @property (strong, nonatomic) IBOutlet ParallelogramView *Parallelogram;
 @property (strong, nonatomic) IBOutlet TriangleView *GreenTriangle;
 @property (strong, nonatomic) IBOutlet TriangleView *BlueTriangle;
+@property (strong, nonatomic) IBOutlet TriangleView *PurpleTriangle;
+@property (strong, nonatomic) IBOutlet TriangleView *OrangeTriangle;
 
 - (IBAction)PanGesture:(UIPanGestureRecognizer *)recognizer;
 - (IBAction)PinchGesture:(UIPinchGestureRecognizer *)recognizer;
 - (IBAction)RotateGesture:(UIRotationGestureRecognizer *)recognizer;
-- (void)setPointsToTriangleWithTheFirst:(CGPoint)firstPoint theSecond:(CGPoint)secondPoint andTheThird:(CGPoint)thirdPoint On:(TriangleView*)v;
+- (void)setPointsToTriangleWithTheFirst:(CGPoint)firstPoint theSecond:(CGPoint)secondPoint andTheThird:(CGPoint)thirdPoint On:(TriangleView *)view WithColor:(UIColor *)color;
 
 @end
