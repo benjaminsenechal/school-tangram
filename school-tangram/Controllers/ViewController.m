@@ -18,6 +18,7 @@
 @synthesize BlueTriangle;
 @synthesize PurpleTriangle;
 @synthesize OrangeTriangle;
+@synthesize RedTriangle;
 
 #pragma mark View Lifecycle
 
@@ -51,10 +52,18 @@
     [self setPointsToTriangleWithTheFirst:SmallFirstPoint theSecond:SmallSecondPoint andTheThird:SmallThirdPoint On:OrangeTriangle WithColor:[UIColor colorWithRed:240.0/255.0 green:127.0/255.0 blue:49.0/255.0 alpha:1]];
     OrangeTriangle.transform = CGAffineTransformMakeRotation(M_PI);
     
+    CGPoint MiddleFirstPoint = CGPointMake(100, 0);
+    CGPoint MiddleSecondPoint = CGPointMake(200, 100);
+    CGPoint MiddleThirdPoint = CGPointMake(0, 100);
+    
+    RedTriangle = [[TriangleView alloc]initWithFrame:CGRectMake(200, 200, 290, 141.42)];
+    [self setPointsToTriangleWithTheFirst:MiddleFirstPoint theSecond:MiddleSecondPoint andTheThird:MiddleThirdPoint On:RedTriangle WithColor:[UIColor colorWithRed:222.0/255.0 green:0.0/255.0 blue:57.0/255.0 alpha:1]];
+    RedTriangle.transform = CGAffineTransformMakeRotation(-M_PI_4);
+
     Square = [[SquareView alloc] initWithFrame:CGRectMake(400, 400, 100, 100)];
     Square.transform = CGAffineTransformMakeRotation(M_PI_4);
     
-    
+    [self addGestureToUI:RedTriangle];
     [self addGestureToUI:Square];
     [self addGestureToUI:Parallelogram];
     [self addGestureToUI:GreenTriangle];
@@ -62,6 +71,7 @@
     [self addGestureToUI:PurpleTriangle];
     [self addGestureToUI:OrangeTriangle];
     
+    [self.view addSubview:RedTriangle];
     [self.view addSubview:OrangeTriangle];
     [self.view addSubview:PurpleTriangle];
     [self.view addSubview:GreenTriangle];
