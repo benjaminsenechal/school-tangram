@@ -71,6 +71,9 @@
     [self addGestureToUI:PurpleTriangle];
     [self addGestureToUI:OrangeTriangle];
     
+    
+    
+    [self.view addSubview:[self addBlurEffect]];
     [self.view addSubview:RedTriangle];
     [self.view addSubview:OrangeTriangle];
     [self.view addSubview:PurpleTriangle];
@@ -78,9 +81,28 @@
     [self.view addSubview:BlueTriangle];
     [self.view addSubview:Parallelogram];
     [self.view addSubview:Square];
+    
 }
 
-#pragma mark Gestures
+#pragma mark Style
+
+- (UIImageView *)addBlurEffect
+{
+    UIImageView *background = [[UIImageView alloc] initWithFrame:self.view.frame];
+    background.contentMode = UIViewContentModeScaleAspectFill;
+    [background setImageToBlur:[UIImage imageNamed:@"wallpaper"]
+                    blurRadius:kLBBlurredImageDefaultBlurRadius
+               completionBlock:^(){
+                   NSLog(@"Blurred image");
+               }];
+    return background;
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
+}
+
+#pragma mark Setup Triangles
 
 - (void)setPointsToTriangleWithTheFirst:(CGPoint)firstPoint theSecond:(CGPoint)secondPoint andTheThird:(CGPoint)thirdPoint On:(TriangleView *)view WithColor:(UIColor *)color
 {
@@ -89,6 +111,8 @@
     [view setThirdPoint:thirdPoint];
     [view setColor:color];
 }
+
+#pragma mark Gestures
 
 - (void)addGestureToUI:(UIView *)view
 {
