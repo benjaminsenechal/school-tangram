@@ -71,17 +71,7 @@
     [self addGestureToUI:PurpleTriangle];
     [self addGestureToUI:OrangeTriangle];
     
-    
-    
     [self.view addSubview:[self addBlurEffect]];
-    [self.view addSubview:RedTriangle];
-    [self.view addSubview:OrangeTriangle];
-    [self.view addSubview:PurpleTriangle];
-    [self.view addSubview:GreenTriangle];
-    [self.view addSubview:BlueTriangle];
-    [self.view addSubview:Parallelogram];
-    [self.view addSubview:Square];
-    
 }
 
 #pragma mark Style
@@ -93,7 +83,13 @@
     [background setImageToBlur:[UIImage imageNamed:@"wallpaper"]
                     blurRadius:kLBBlurredImageDefaultBlurRadius
                completionBlock:^(){
-                   NSLog(@"Blurred image");
+                   [self.view addSubview:RedTriangle];
+                   [self.view addSubview:OrangeTriangle];
+                   [self.view addSubview:PurpleTriangle];
+                   [self.view addSubview:GreenTriangle];
+                   [self.view addSubview:BlueTriangle];
+                   [self.view addSubview:Parallelogram];
+                   [self.view addSubview:Square];
                }];
     return background;
 }
